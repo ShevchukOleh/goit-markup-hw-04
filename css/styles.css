@@ -148,11 +148,25 @@ ul {
     color: var(--grey-color);
     text-decoration: none;
     padding: 15px 0;
+    display: flex;
+    align-items: center;
 }
 
 .mail-header:hover,
 .mail-header:focus {
     color: var(--color-blue);
+}
+
+.envelope {
+    fill: var(--grey-color);
+    margin-right: 10px;
+    align-items: center;
+    
+}
+
+.mail-header:hover .envelope,
+.mail-header:focus .envelope {
+    fill: var(--color-blue);
 }
 
 .number-header{
@@ -162,11 +176,22 @@ ul {
     color: var(--grey-color);
     text-decoration: none;
     padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.smartphone {
+    margin-right: 10px;
 }
 
 .number-header:hover,
 .number-header:focus {
     color: var(--color-blue);
+}
+
+.number-header:hover .smartphone,
+.number-header:focus .smartphone {
+    fill: var(--color-blue);
 }
 
 .hero {
@@ -368,8 +393,8 @@ ul {
 
 .customer-link {
     display: block;
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--team-soc-icons);
     border-radius: 4px;
     padding: 16px 32px;
@@ -386,7 +411,7 @@ ul {
 }
 
 .customer-link:hover .customer-icon,
-.customer-link:focus.customer-icon {
+.customer-link:focus .customer-icon {
     fill: var(--color-blue);
 }
 
@@ -422,8 +447,6 @@ ul {
 .address {
     color: var(--communication-color);
     background-color: var(--hero-background-color); 
-    padding-top: 60px;
-    padding-bottom: 60px; 
 }
 
 .street {
@@ -459,14 +482,32 @@ ul {
     color: var(--color-blue);
 }
 
-.social-links {}
+.social-links {
+    padding-top: 72px;
+    padding-bottom: 100px;
+    margin-left: 70px;
+}
+
+.address-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .social-links-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--white-color);
+    margin-bottom: 20px;
 }
 
 .social-list {
     list-style: none;
     display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .social-item {
@@ -476,7 +517,6 @@ ul {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    gap: 10px;
 }
 
 .social-link {
@@ -489,10 +529,23 @@ ul {
     justify-content: center;
 }
 
+.footer-adress {
+    display: flex;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--color-blue);
+}
+
 .social-icon {
     fill: var(--white-color);
 }
 
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: var(--white-color);
+} 
 
 /*---------Portfolio-------*/
 .projects {
@@ -573,3 +626,5 @@ ul {
 .portfolio-link {
     text-decoration: none;
 }
+
+
