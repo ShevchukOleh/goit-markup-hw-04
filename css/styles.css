@@ -202,6 +202,8 @@ ul {
     url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -411,7 +413,6 @@ ul {
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .customer-link {
