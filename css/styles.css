@@ -661,6 +661,8 @@ ul {
 .portfolio-link {
     display: block;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio-link:hover {
