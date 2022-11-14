@@ -515,14 +515,7 @@ ul {
 }
 
 .social-links {
-    padding-top: 72px;
-    padding-bottom: 100px;
     margin-left: 70px;
-}
-
-.address-info {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .social-links-title {
@@ -563,6 +556,9 @@ ul {
 
 .footer-adress {
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: baseline;
 }
 
 .social-link:hover,
